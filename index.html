@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok R - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen text-gray-100">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-gray-800/80 backdrop-blur-sm z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <h1 class="text-2xl font-bold text-teal-400">Ashok R</h1>
+                <div class="md:hidden">
+                    <button id="menuBtn" class="text-teal-400 hover:text-teal-300 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="navLinks" class="hidden md:flex space-x-8">
+                    <a href="#about" class="block py-2 hover:text-teal-400 transition-colors">About</a>
+                    <a href="#skills" class="block py-2 hover:text-teal-400 transition-colors">Skills</a>
+                    <a href="#projects" class="block py-2 hover:text-teal-400 transition-colors">Projects</a>
+                    <a href="#education" class="block py-2 hover:text-teal-400 transition-colors">Education</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-gray-800/90 backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-teal-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-teal-400 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-teal-400 transition-colors">Education</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-20 fade-in">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Ashok R</h1>
+            <p class="text-lg md:text-2xl text-teal-400 mb-6">Python Developer & Tech Enthusiast</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
+                <a href="tel:+919526029883" class="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-lg transition-colors">Call Me</a>
+                <a href="mailto:ashokramesh2003@gmail.com" class="border border-teal-500 hover:bg-teal-900 px-6 py-3 rounded-lg transition-colors">Email Me</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- About Section -->
+    <section id="about" class="container mx-auto px-6 py-16 fade-in">
+        <h2 class="text-3xl font-bold mb-8 text-teal-400">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 p-6 rounded-xl">
+                <p class="text-lg leading-relaxed">Motivated BCA graduate passionate about Python development. Experienced in computer vision projects and committed to continuous learning in technology.</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-xl">
+                <div class="space-y-4">
+                    <p><span class="text-teal-400">Location:</span> Kasargode, Kerala</p>
+                    <p><span class="text-teal-400">DOB:</span> September 20, 2003</p>
+                    <p><span class="text-teal-400">Languages:</span> English, Kannada, Hindi, Malayalam, Tamil</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-6 py-16 fade-in">
+        <h2 class="text-3xl font-bold mb-8 text-teal-400">Skills & Expertise</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="skill-card bg-gray-800 p-4 rounded-lg text-center hover:bg-teal-500 transition-all">
+                <h3 class="font-bold mb-2">Python</h3>
+                <p class="text-sm">OOPS Programming</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-4 rounded-lg text-center hover:bg-teal-500 transition-all">
+                <h3 class="font-bold mb-2">Web Dev</h3>
+                <p class="text-sm">HTML/CSS/JS</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-4 rounded-lg text-center hover:bg-teal-500 transition-all">
+                <h3 class="font-bold mb-2">Computer Vision</h3>
+                <p class="text-sm">OpenCV</p>
+            </div>
+            <div class="skill-card bg-gray-800 p-4 rounded-lg text-center hover:bg-teal-500 transition-all">
+                <h3 class="font-bold mb-2">Multilingual</h3>
+                <p class="text-sm">5 Languages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto px-6 py-16 fade-in">
+        <h2 class="text-3xl font-bold mb-8 text-teal-400">Featured Project</h2>
+        <div class="bg-gray-800 rounded-xl p-8 hover:shadow-xl transition-shadow">
+            <h3 class="text-2xl font-bold mb-4">Vehicle Detection System</h3>
+            <p class="text-gray-300 mb-4">Developed a Python-based vehicle detection system using OpenCV that identifies vehicles in video streams and marks them with rectangular bounding boxes.</p>
+            <div class="flex space-x-2">
+                <span class="bg-teal-900 text-teal-300 px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="bg-teal-900 text-teal-300 px-3 py-1 rounded-full text-sm">OpenCV</span>
+                <span class="bg-teal-900 text-teal-300 px-3 py-1 rounded-full text-sm">Computer Vision</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto px-6 py-16 fade-in">
+        <h2 class="text-3xl font-bold mb-8 text-teal-400">Education</h2>
+        <div class="space-y-6">
+            <div class="bg-gray-800 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-2">BCA - Computer Science</h3>
+                <p class="text-teal-400">Mangalore University</p>
+                <p class="text-gray-400">Graduated with 85%</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-xl">
+                <h3 class="text-xl font-bold mb-2">Class XII</h3>
+                <p class="text-teal-400">Karnataka State Board</p>
+                <p class="text-gray-400">Scored 85% (2020)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800/80 mt-20">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-teal-400 text-xl font-bold mb-4">Ashok R</h3>
+                    <p class="text-gray-300">Passionate developer creating innovative solutions</p>
+                </div>
+                <div>
+                    <h4 class="text-teal-400 text-lg mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li><a href="tel:+919526029883" class="hover:text-teal-400">+91 95260 29883</a></li>
+                        <li><a href="mailto:ashokramesh2003@gmail.com" class="hover:text-teal-400">ashokramesh2003@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-teal-400 text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-teal-400">About</a></li>
+                        <li><a href="#projects" class="hover:text-teal-400">Projects</a></li>
+                        <li><a href="#education" class="hover:text-teal-400">Education</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Ashok R. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            el.style.opacity = 0;
+            el.style.transform = 'translateY(20px)';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
